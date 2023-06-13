@@ -17,7 +17,7 @@ logger.addHandler(console_handler)
 logger.addHandler(file_handler)
 
 # Command to stream logs from Railway app deployment
-command = "railway logs -d"  # Replace with the actual command to stream logs
+command = "railway logs -d" 
 
 # Start streaming logs
 process = subprocess.Popen(command.split(), stdout=subprocess.PIPE, universal_newlines=True)
@@ -26,7 +26,6 @@ process = subprocess.Popen(command.split(), stdout=subprocess.PIPE, universal_ne
 for log in process.stdout:
     log = log.strip()
     logger.info(log)
-    # You can add additional processing or filtering of the logs here if needed
 
 # Close the process and log file handlers
 process.stdout.close()
