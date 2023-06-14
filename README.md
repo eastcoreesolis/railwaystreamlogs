@@ -17,13 +17,13 @@ I've created a solution that uses the [`railway` cli](https://docs.railway.app/d
 Now that the project is linked, you can use the tooling uploaded to this repository to stream logs to a text file. Simply download both the `railway_logs.sh` and `test.py` (in a linux enviornment) in the same directory. You can do this using `wget` or `git pull`.
 
 * Change permissions on the files.
- * `chmod +x railway_logs.sh`
- * `chmod +x test.py`
+   * `chmod +x railway_logs.sh`
+   * `chmod +x test.py`
 
 * Once permissions on the file are set, execute `railway_logs.sh`.
- * `sh railway_logs.sh`
+   * `sh railway_logs.sh`
 * Check your working directory for the `railway_logs.txt` file which will show the deployment logs for your application.
-* `vi railway_logs.txt`
+   * `vi railway_logs.txt`
 
 I have tested and validated that this tooling works.
 
